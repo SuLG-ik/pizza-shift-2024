@@ -9,21 +9,44 @@
 /* Begin PBXBuildFile section */
 		FF574AF52C39128F00CFD25E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF574AF42C39128F00CFD25E /* AppDelegate.swift */; };
 		FF574AF72C39128F00CFD25E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF574AF62C39128F00CFD25E /* SceneDelegate.swift */; };
-		FF574AF92C39128F00CFD25E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF574AF82C39128F00CFD25E /* ViewController.swift */; };
-		FF574AFC2C39128F00CFD25E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FF574AFB2C39128F00CFD25E /* Base */; };
 		FF574AFE2C39129100CFD25E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FF574AFD2C39129100CFD25E /* Assets.xcassets */; };
 		FF574B012C39129100CFD25E /* Base in Resources */ = {isa = PBXBuildFile; fileRef = FF574B002C39129100CFD25E /* Base */; };
+		FF574B092C39139200CFD25E /* AuthViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF574B082C39139200CFD25E /* AuthViewController.swift */; };
+		FF574B0C2C39150C00CFD25E /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = FF574B0B2C39150C00CFD25E /* SnapKit */; };
+		FF574B0E2C3918B500CFD25E /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF574B0D2C3918B500CFD25E /* AppColors.swift */; };
+		FF574B102C391BA900CFD25E /* AppSizes.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF574B0F2C391BA900CFD25E /* AppSizes.swift */; };
+		FF574B142C392FFA00CFD25E /* FormatTextFieldDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF574B132C392FFA00CFD25E /* FormatTextFieldDelegate.swift */; };
+		FF574B182C39321100CFD25E /* MaskFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF574B172C39321100CFD25E /* MaskFormatter.swift */; };
+		FF574B1C2C39827C00CFD25E /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF574B1B2C39827C00CFD25E /* MainViewController.swift */; };
+		FF574B1E2C39847A00CFD25E /* PizzaTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF574B1D2C39847A00CFD25E /* PizzaTableViewCell.swift */; };
+		FF574B202C39898F00CFD25E /* UIImageViewURL.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF574B1F2C39898F00CFD25E /* UIImageViewURL.swift */; };
+		FF574B222C399ADF00CFD25E /* PizzaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF574B212C399ADF00CFD25E /* PizzaViewModel.swift */; };
+		FF574B262C39CAED00CFD25E /* PizzaCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF574B252C39CAED00CFD25E /* PizzaCardViewController.swift */; };
+		FF574B282C3A5EDE00CFD25E /* PizzaIngredientModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF574B272C3A5EDE00CFD25E /* PizzaIngredientModel.swift */; };
+		FF574B2A2C3A663300CFD25E /* PizzaSizeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF574B292C3A663300CFD25E /* PizzaSizeModel.swift */; };
+		FF574B2C2C3A6D4B00CFD25E /* PizzaDoughModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF574B2B2C3A6D4B00CFD25E /* PizzaDoughModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		FF574AF12C39128F00CFD25E /* pizza.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = pizza.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FF574AF42C39128F00CFD25E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FF574AF62C39128F00CFD25E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FF574AF82C39128F00CFD25E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FF574AFB2C39128F00CFD25E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FF574AFD2C39129100CFD25E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FF574B002C39129100CFD25E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FF574B022C39129100CFD25E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FF574B082C39139200CFD25E /* AuthViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewController.swift; sourceTree = "<group>"; };
+		FF574B0D2C3918B500CFD25E /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		FF574B0F2C391BA900CFD25E /* AppSizes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSizes.swift; sourceTree = "<group>"; };
+		FF574B132C392FFA00CFD25E /* FormatTextFieldDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormatTextFieldDelegate.swift; sourceTree = "<group>"; };
+		FF574B172C39321100CFD25E /* MaskFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MaskFormatter.swift; sourceTree = "<group>"; };
+		FF574B1B2C39827C00CFD25E /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
+		FF574B1D2C39847A00CFD25E /* PizzaTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaTableViewCell.swift; sourceTree = "<group>"; };
+		FF574B1F2C39898F00CFD25E /* UIImageViewURL.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewURL.swift; sourceTree = "<group>"; };
+		FF574B212C399ADF00CFD25E /* PizzaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaViewModel.swift; sourceTree = "<group>"; };
+		FF574B252C39CAED00CFD25E /* PizzaCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaCardViewController.swift; sourceTree = "<group>"; };
+		FF574B272C3A5EDE00CFD25E /* PizzaIngredientModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaIngredientModel.swift; sourceTree = "<group>"; };
+		FF574B292C3A663300CFD25E /* PizzaSizeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaSizeModel.swift; sourceTree = "<group>"; };
+		FF574B2B2C3A6D4B00CFD25E /* PizzaDoughModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PizzaDoughModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +54,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FF574B0C2C39150C00CFD25E /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,11 +82,22 @@
 			children = (
 				FF574AF42C39128F00CFD25E /* AppDelegate.swift */,
 				FF574AF62C39128F00CFD25E /* SceneDelegate.swift */,
-				FF574AF82C39128F00CFD25E /* ViewController.swift */,
-				FF574AFA2C39128F00CFD25E /* Main.storyboard */,
 				FF574AFD2C39129100CFD25E /* Assets.xcassets */,
 				FF574AFF2C39129100CFD25E /* LaunchScreen.storyboard */,
 				FF574B022C39129100CFD25E /* Info.plist */,
+				FF574B082C39139200CFD25E /* AuthViewController.swift */,
+				FF574B132C392FFA00CFD25E /* FormatTextFieldDelegate.swift */,
+				FF574B0D2C3918B500CFD25E /* AppColors.swift */,
+				FF574B0F2C391BA900CFD25E /* AppSizes.swift */,
+				FF574B172C39321100CFD25E /* MaskFormatter.swift */,
+				FF574B1B2C39827C00CFD25E /* MainViewController.swift */,
+				FF574B1D2C39847A00CFD25E /* PizzaTableViewCell.swift */,
+				FF574B1F2C39898F00CFD25E /* UIImageViewURL.swift */,
+				FF574B212C399ADF00CFD25E /* PizzaViewModel.swift */,
+				FF574B252C39CAED00CFD25E /* PizzaCardViewController.swift */,
+				FF574B272C3A5EDE00CFD25E /* PizzaIngredientModel.swift */,
+				FF574B292C3A663300CFD25E /* PizzaSizeModel.swift */,
+				FF574B2B2C3A6D4B00CFD25E /* PizzaDoughModel.swift */,
 			);
 			path = pizza;
 			sourceTree = "<group>";
@@ -83,6 +118,9 @@
 			dependencies = (
 			);
 			name = pizza;
+			packageProductDependencies = (
+				FF574B0B2C39150C00CFD25E /* SnapKit */,
+			);
 			productName = pizza;
 			productReference = FF574AF12C39128F00CFD25E /* pizza.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +149,9 @@
 				Base,
 			);
 			mainGroup = FF574AE82C39128F00CFD25E;
+			packageReferences = (
+				FF574B0A2C39150C00CFD25E /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = FF574AF22C39128F00CFD25E /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -127,7 +168,6 @@
 			files = (
 				FF574AFE2C39129100CFD25E /* Assets.xcassets in Resources */,
 				FF574B012C39129100CFD25E /* Base in Resources */,
-				FF574AFC2C39128F00CFD25E /* Base in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -138,23 +178,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FF574AF92C39128F00CFD25E /* ViewController.swift in Sources */,
+				FF574B282C3A5EDE00CFD25E /* PizzaIngredientModel.swift in Sources */,
+				FF574B142C392FFA00CFD25E /* FormatTextFieldDelegate.swift in Sources */,
+				FF574B1E2C39847A00CFD25E /* PizzaTableViewCell.swift in Sources */,
 				FF574AF52C39128F00CFD25E /* AppDelegate.swift in Sources */,
+				FF574B0E2C3918B500CFD25E /* AppColors.swift in Sources */,
+				FF574B102C391BA900CFD25E /* AppSizes.swift in Sources */,
+				FF574B2C2C3A6D4B00CFD25E /* PizzaDoughModel.swift in Sources */,
+				FF574B092C39139200CFD25E /* AuthViewController.swift in Sources */,
+				FF574B202C39898F00CFD25E /* UIImageViewURL.swift in Sources */,
+				FF574B222C399ADF00CFD25E /* PizzaViewModel.swift in Sources */,
+				FF574B182C39321100CFD25E /* MaskFormatter.swift in Sources */,
 				FF574AF72C39128F00CFD25E /* SceneDelegate.swift in Sources */,
+				FF574B1C2C39827C00CFD25E /* MainViewController.swift in Sources */,
+				FF574B2A2C3A663300CFD25E /* PizzaSizeModel.swift in Sources */,
+				FF574B262C39CAED00CFD25E /* PizzaCardViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FF574AFA2C39128F00CFD25E /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FF574AFB2C39128F00CFD25E /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FF574AFF2C39129100CFD25E /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -296,7 +340,6 @@
 				INFOPLIST_FILE = pizza/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -323,7 +366,6 @@
 				INFOPLIST_FILE = pizza/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
-				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -361,6 +403,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FF574B0A2C39150C00CFD25E /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.7.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FF574B0B2C39150C00CFD25E /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FF574B0A2C39150C00CFD25E /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FF574AE92C39128F00CFD25E /* Project object */;
 }

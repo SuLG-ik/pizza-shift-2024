@@ -11,7 +11,7 @@ class FormatTextFieldDelegate: NSObject, UITextFieldDelegate {
     
     private var formatter: (_ value: String) -> String
     
-    init(formatter: @escaping (_ value: String) -> String) {
+    init(_ formatter: @escaping (_ value: String) -> String) {
         self.formatter = formatter
     }
 

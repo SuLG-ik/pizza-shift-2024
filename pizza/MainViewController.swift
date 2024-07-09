@@ -6,24 +6,83 @@
 //
 
 import UIKit
+import SnapKit
 
-class MainViewController: UIViewController {
+final class MainViewController: UIViewController {
 
+    private lazy var pizzaTableView = {
+        let view = UITableView()
+        view.register(PizzaTableViewCell.self, forCellReuseIdentifier: PizzaTableViewCell.identifier)
+        view.dataSource = self
+        view.delegate = self
+        view.separatorStyle = .none
+        return view
+    }()
+    
+    private let dataSource: [PizzaViewModel] = PizzaViewModel.mockDataSource()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
+        setupWindow()
+        setupViews()
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destination.
-        // Pass the selected object to the new view controller.
+    private func setupWindow() {
+        self.title = "Пицца"
     }
-    */
+    
+    private func setupViews() {
+        self.view.addSubview(pizzaTableView)
+        self.pizzaTableView.snp.makeConstraints { make in
+            make.edges.equalToSuperview()
+        }
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        if let selectedIndexPath = pizzaTableView.indexPathForSelectedRow {
+            pizzaTableView.deselectRow(at: selectedIndexPath, animated: animated)
+        }
+    }
+    
+}
 
+
+extension MainViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let viewController = PizzaCardViewController()
+        viewController.dataSource = dataSource
+        viewController.selectedIndex = indexPath.row
+        navigationController?.pushViewController(viewController, animated: true)
+    }
+    
+    
+    
+    // Adjust the cell's frame to add the spacing
+    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
+        let spacing: CGFloat = 300
+        var frame = cell.frame
+        frame.origin.y += spacing
+        cell.frame = frame
+    }
+}
+
+
+extension MainViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return dataSource.count
+    }
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: PizzaTableViewCell.identifier, for: indexPath) as? PizzaTableViewCell else {
+            return UITableViewCell()
+        }
+        cell.configure(dataSource[indexPath.row])
+        return cell
+    }
+
+}
+
+
+#Preview {
+    MainViewController()
 }

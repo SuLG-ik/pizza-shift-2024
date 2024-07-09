@@ -6,3 +6,15 @@
 //
 
 import Foundation
+
+final class TimerDown {
+    
+    func start(startValue: Int, endValue: Int) {
+        
+    }
+    
+    func setOnTimeUpdate(clusure: (_ newTime: Int) -> Void) {
+        
+    }
+    
+}
