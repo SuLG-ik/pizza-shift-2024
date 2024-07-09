@@ -55,16 +55,6 @@ extension MainViewController: UITableViewDelegate {
         viewController.selectedIndex = indexPath.row
         navigationController?.pushViewController(viewController, animated: true)
     }
-    
-    
-    
-    // Adjust the cell's frame to add the spacing
-    func tableView(_ tableView: UITableView, willDisplay cell: UITableViewCell, forRowAt indexPath: IndexPath) {
-        let spacing: CGFloat = 300
-        var frame = cell.frame
-        frame.origin.y += spacing
-        cell.frame = frame
-    }
 }
 
 

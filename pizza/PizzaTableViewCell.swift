@@ -55,6 +55,7 @@ class PizzaTableViewCell: UITableViewCell {
         priceLabel.snp.makeConstraints { make in
             make.top.equalTo(descriptionLabel.snp.bottom).offset(8)
             make.leading.trailing.equalToSuperview().inset(8)
+            make.bottom.equalToSuperview()
         }
         return view
     }()
@@ -83,7 +84,6 @@ class PizzaTableViewCell: UITableViewCell {
         self.titlesView.snp.makeConstraints { make in
             make.top.bottom.equalToSuperview().inset(8)
             make.trailing.equalToSuperview()
-            make.bottom.equalTo(priceLabel.snp.bottom)
             make.leading.equalTo(leadingImageView.snp.trailing)
         }
     }

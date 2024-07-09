@@ -67,7 +67,6 @@ class PizzaCardViewController: UIViewController {
     private func configure(with data: PizzaViewModel) {
         self.mainImageView.setImageURL(url: data.imageURL)
         self.titleLabel.text = data.name
-        self
     }
     
     private func setupViews() {
